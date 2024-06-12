@@ -1,0 +1,26 @@
+6/12
+
+・next.jsインストール
+    npx create-next-app@latest --ts my-nextjs-app
+
+・VSCodeにTailWndの設定を入れる
+    "files.associations": {
+        "*.css": "tailwindcss"
+      }
+
+・「@」のaliasを使用
+    ・next.config.mjs
+        import path from 'path'
+
+        /** @type {import('next').NextConfig} */
+        const nextConfig = {
+            webpack: (config, options) => {
+            config.resolve.alias['@'] = path.join(process.cwd(), 'app')
+            return config
+            },
+        }
+    
+    ・tsconfig.json
+        "paths": {
+            "@/*": ["./app/*"],
+        }

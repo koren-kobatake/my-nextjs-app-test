@@ -17,7 +17,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link href='/reference' className='text-white'>
-            一覧
+            参照
           </Link>
         </li>
         <li>
