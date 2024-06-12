@@ -11,22 +11,22 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href='/pages/about' className='text-white'>
+          <Link href='/about' className='text-white'>
             About
           </Link>
         </li>
         <li>
-          <Link href='/pages/blog' className='text-white'>
+          <Link href='/blog' className='text-white'>
             Blog
           </Link>
         </li>
         <li>
-          <Link href='/pages/baseball' className='text-white'>
+          <Link href='/baseball' className='text-white'>
             Baseball
           </Link>
         </li>
         <li>
-          <Link href='/pages/soccer' className='text-white'>
+          <Link href='/soccer' className='text-white'>
             Soccer
           </Link>
         </li>
