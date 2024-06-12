@@ -3,7 +3,7 @@ import Link from 'next/link'
 export const Navbar = () => {
   return (
 
-    <nav className='bg-gray-800 p-4'>
+    <nav className='bg-red-800 p-4'>
       <ul className='flex space-x-4'>
         <li>
           <Link href='/' className='text-white'>
@@ -21,13 +21,18 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href='/soccer' className='text-white'>
-            サッカー
+          <Link href='/table' className='text-white'>
+            でーたてーぶる
           </Link>
         </li>
         <li>
-          <Link href='/baseball' className='text-white'>
-            野球
+          <Link href='/tabs' className='text-white'>
+            たぶ
+          </Link>
+        </li>
+        <li>
+          <Link href='/card' className='text-white'>
+            かーど
           </Link>
         </li>
       </ul>
