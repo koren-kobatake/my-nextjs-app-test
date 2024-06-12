@@ -48,9 +48,23 @@
     $ npx shadcn-ui add card
     $ npx shadcn-ui add tabs input textarea
     $ npx shadcn-ui add button
-    $ npx shadcn-ui@latest add table
+    $ npx shadcn-ui add table
         $ npm install @tanstack/react-table
     $ npx shadcn-ui add dropdown-menu
     $ npx shadcn-ui add checkbox
     $ npx shadcn-ui add navigation-menu
 
+    $ npx shadcn-ui add select
+    $ npx shadcn-ui add switch
+    $ npx shadcn-ui add command
+    $ npx shadcn-ui add radio-group
+    $ npx shadcn-ui add form
+    $ npx shadcn-ui add toast
+    $ npx shadcn-ui add calendar
+    $ npx shadcn-ui add popover
+
+・mySQLクライアントインストール
+    $ npm install mysql2
+
+・API通信ができなかった問題
+    appディレクトリ構造を使用している場合、Next.jsのappディレクトリの使用方法が異なります。Next.jsの13以降では、appディレクトリは新しいルーティング構造を提供しますが、APIルートは通常のpagesディレクトリに配置する必要があります。

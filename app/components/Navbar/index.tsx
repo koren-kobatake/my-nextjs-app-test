@@ -35,6 +35,16 @@ export const Navbar = () => {
             かーど
           </Link>
         </li>
+        <li>
+          <Link href='/checkbox' className='text-white'>
+            ちぇっくぼっくす
+          </Link>
+        </li>
+        <li>
+          <Link href='/datepicker' className='text-white'>
+            でーとぴっかー
+          </Link>
+        </li>
       </ul>
     </nav>
   )
