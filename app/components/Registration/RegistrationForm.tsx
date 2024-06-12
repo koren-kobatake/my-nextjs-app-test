@@ -20,6 +20,8 @@ import {
 import { toast } from "@/components/ui/use-toast"
 import { FormSchema } from "./formSchema"
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
 export function RegistrationForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -27,10 +29,10 @@ export function RegistrationForm() {
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
-      const response = await fetch("/api/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(`${apiUrl}/register`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       })
