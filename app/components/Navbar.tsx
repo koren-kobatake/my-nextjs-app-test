@@ -7,31 +7,30 @@ export default function Navbar() {
       <ul className='flex space-x-4'>
         <li>
           <Link href='/' className='text-white'>
-            Home
+            Top
           </Link>
         </li>
         <li>
-          <Link href='/about' className='text-white'>
-            About
+          <Link href='/registration' className='text-white'>
+            登録
           </Link>
         </li>
         <li>
-          <Link href='/blog' className='text-white'>
-            Blog
-          </Link>
-        </li>
-        <li>
-          <Link href='/baseball' className='text-white'>
-            Baseball
+          <Link href='/reference' className='text-white'>
+            一覧
           </Link>
         </li>
         <li>
           <Link href='/soccer' className='text-white'>
-            Soccer
+            サッカー
+          </Link>
+        </li>
+        <li>
+          <Link href='/baseball' className='text-white'>
+            野球
           </Link>
         </li>
       </ul>
     </nav>
-    
   )
 }
