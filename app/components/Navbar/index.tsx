@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Navbar() {
+export const Navbar = () => {
   return (
 
     <nav className='bg-gray-800 p-4'>
