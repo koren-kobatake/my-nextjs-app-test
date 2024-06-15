@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Payment } from '../constants/data'
+import { Payment } from './constants/data'
 
 export const columns: ColumnDef<Payment>[] = [
   {
