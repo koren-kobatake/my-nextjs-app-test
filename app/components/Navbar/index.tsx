@@ -22,27 +22,27 @@ export const Navbar = () => {
         </li>
         <li>
           <Link href='/table' className='text-white'>
-            でーたてーぶる
+            DataTable
           </Link>
         </li>
         <li>
           <Link href='/tabs' className='text-white'>
-            たぶ
+            Tabs
           </Link>
         </li>
         <li>
           <Link href='/card' className='text-white'>
-            かーど
+            Card
           </Link>
         </li>
         <li>
           <Link href='/checkbox' className='text-white'>
-            ちぇっくぼっくす
+            CheckBox
           </Link>
         </li>
         <li>
           <Link href='/datepicker' className='text-white'>
-            でーとぴっかー
+            DatePicker
           </Link>
         </li>
       </ul>
