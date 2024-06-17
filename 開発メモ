@@ -26,6 +26,7 @@
         }
 
 ・Viteは使う？
+    →使わない（APIやReactServerに対応していない、Next.jsに統合可能だがすんなりは行かなそう、使う必要もないし使わなくていいや）
 
 ・shadcn-uiインストール
     https://zenn.dev/d2c_mtech_blog/articles/54dfd40120a299
@@ -68,3 +69,35 @@
 
 ・API通信ができなかった問題
     appディレクトリ構造を使用している場合、Next.jsのappディレクトリの使用方法が異なります。Next.jsの13以降では、appディレクトリは新しいルーティング構造を提供しますが、APIルートは通常のpagesディレクトリに配置する必要があります。
+
+・セッション管理パッケージインストール
+    最適なライブラリが未定（next-auth、iron-session）あとで考える（6/17）
+    $ npm install next-auth
+    https://mseeeen.msen.jp/nextjs-custom-auth-with-iron-session/
+
+
+6/17
+・URLパラメタ取得方法
+  const { searchParams } = new URL(req.url as string);
+  const USERID = searchParams.get('USERID');
+
+・ロガー（Pino）
+    $ npm install pino pino-pretty
+    $ npm install --save-dev @types/pino
+
+・mySQLインストール
+    ・DB（testdb）、ユーザ/パス（testuser/testuser）
+        $ mysql -u testuser -p
+        $ mysql> USE testdb;
+
+・Prismaインストール
+    $ npm install @prisma/client
+    $ npm install prisma --save-dev
+    $ npx prisma init
+    $ npx prisma db pull //データベーススキーマのインポート（既存テーブル）
+    $ npx prisma generate   //Prismaクライアントの生成
+    $ schema.prismaに新規テーブルモデル追加
+    $ npx prisma migrate dev --name init  //Prismaのマイグレーション実行
+
+・aws-sdkインストール
+    $ npm install aws-sdk

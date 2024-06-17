@@ -4,9 +4,9 @@ import mysql from 'mysql2/promise'
 // MySQL接続設定
 const dbConfig = {
   host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'yourdatabase',
+  user: 'testuser',
+  password: 'testuser',
+  database: 'testdb',
 }
 
 export async function POST(req: NextRequest) {

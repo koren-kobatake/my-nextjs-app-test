@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Dog {
+  dog_id   Int    @id
+  dog_name String @db.VarChar(30)
+}
+
+// 新規テーブルモデル定義
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String @db.VarChar(30)
+  email String @db.VarChar(30) @unique
+}
