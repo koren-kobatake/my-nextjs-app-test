@@ -101,3 +101,11 @@
 
 ・aws-sdkインストール
     $ npm install aws-sdk
+
+
+6/18
+・next-authインストール
+    $ npm install next-auth
+    $ npm install jsonwebtoken
+    $ npm i --save-dev @types/jsonwebtoken
+
