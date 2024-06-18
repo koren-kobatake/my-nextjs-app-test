@@ -112,3 +112,6 @@
 ・ビルド再試行
     $ rm -rf .next
     $ npm run dev
+
+・CORS確認方法
+    $ curl -H "Origin: http://example.com" -i http://localhost:3000/api/hello
