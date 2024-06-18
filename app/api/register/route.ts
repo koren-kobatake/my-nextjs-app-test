@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import mysql from 'mysql2/promise'
+import { authOptions } from '@/api/auth/[...nextauth]/route';
+import { getServerSession } from 'next-auth/next';
 
 // MySQL接続設定
 const dbConfig = {
@@ -11,6 +13,9 @@ const dbConfig = {
 
 export async function POST(req: NextRequest) {
   const { name, email, acceptTerms, gender } = await req.json()
+
+  const session = await getServerSession(authOptions);
+  const test = JSON.stringify(session)
 
   try {
     const connection = await mysql.createConnection(dbConfig)

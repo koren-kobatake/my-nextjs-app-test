@@ -10,7 +10,9 @@ const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async session({ session, token }: { session: any; token: JWT }) {
-      session.userId = token.sub;
+      session.userId = token.userId;
+      session.role = token.role;
+      session.env = token.env;
       session.sessionId = token.jti;
       return session;
     },

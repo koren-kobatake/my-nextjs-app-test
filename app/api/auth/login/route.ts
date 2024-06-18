@@ -12,7 +12,9 @@ export async function POST(request: NextRequest) {
 
   const token = await encode({
     token: {
-      sub: USERID,
+      userId: USERID,
+      role: 'AAAA',
+      env: process.env.ENV,
       jti: generateSessionId(),
     },
     secret: process.env.NEXTAUTH_SECRET!,

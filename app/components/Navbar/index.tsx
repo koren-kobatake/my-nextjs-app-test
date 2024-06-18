@@ -11,6 +11,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link href='/logintest' className='text-white'>
+            ログインテスト
+          </Link>
+        </li>
+        <li>
           <Link href='/registration' className='text-white'>
             登録
           </Link>
