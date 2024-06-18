@@ -109,3 +109,6 @@
     $ npm install jsonwebtoken
     $ npm i --save-dev @types/jsonwebtoken
 
+・ビルド再試行
+    $ rm -rf .next
+    $ npm run dev

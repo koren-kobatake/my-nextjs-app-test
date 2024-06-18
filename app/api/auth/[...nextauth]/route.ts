@@ -35,6 +35,9 @@ const authOptions: NextAuthOptions = {
 //       return jwt.verify(token, secret) as JWT;
 //     },
 //   },
+  session: {
+    maxAge: 30 * 60, // セッションの有効期限を30分に設定
+  },
   secret: process.env.NEXTAUTH_SECRET,
 };
 
