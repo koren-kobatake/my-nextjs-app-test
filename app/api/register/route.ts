@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import mysql from 'mysql2/promise'
-import { authOptions } from '@/api/auth/[...nextauth]/route';
+import { authOptions } from '@/api/auth/[...nextauth]/options';
 import { getServerSession } from 'next-auth/next';
 
 // MySQL接続設定

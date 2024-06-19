@@ -16,6 +16,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link href='/session' className='text-white'>
+            セッション表示
+          </Link>
+        </li>
+        <li>
           <Link href='/registration' className='text-white'>
             登録
           </Link>
