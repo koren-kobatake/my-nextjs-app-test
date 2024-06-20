@@ -1,0 +1,17 @@
+・Cloud9
+  $ cd rootDir
+  $ docker-compose build
+  $ aws ecr get-login-password --region your-region | docker login --username AWS --password-stdin your-account-id.dkr.ecr.your-region.amazonaws.com
+  $ docker push your-account-id.dkr.ecr.your-region.amazonaws.com/nextjs-app:latest
+
+・ECS
+  ・サービス更新
+    タスクを0にして実行
+  ・タスクが終了したことを確認
+  ・サービス更新
+    タスクを1にして実行
+  ・タスクの正常起動を確認
+  ・ALBターゲットグループのヘルスチェックが正常になることを確認
+
+・画面起動
+   ・ECSサービスのセキュリティタブから開く

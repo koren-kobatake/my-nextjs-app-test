@@ -1,5 +1,3 @@
-6/12
-
 ・next.jsインストール
     npx create-next-app@latest --ts my-nextjs-app
 
@@ -26,7 +24,7 @@
         }
 
 ・Viteは使う？
-    →使わない（APIやReactServerに対応していない、Next.jsに統合可能だがすんなりは行かなそう、使う必要もないし使わなくていいや）
+    →使わない（APIやReactServerに対応していない、Next.jsに統合可能だがすんなりは行かなそう、使う必要もないし使わなくてOK）
 
 ・shadcn-uiインストール
     https://zenn.dev/d2c_mtech_blog/articles/54dfd40120a299
@@ -67,8 +65,9 @@
 ・mySQLクライアントインストール
     $ npm install mysql2
 
-・API通信ができなかった問題
-    appディレクトリ構造を使用している場合、Next.jsのappディレクトリの使用方法が異なります。Next.jsの13以降では、appディレクトリは新しいルーティング構造を提供しますが、APIルートは通常のpagesディレクトリに配置する必要があります。
+・API通信ができなかった問題の原因
+    appディレクトリ構造を使用している場合、Next.jsのappディレクトリの使用方法が異なります。
+    Next.jsの13以降では、appディレクトリは新しいルーティング構造を提供しますが、APIルートは通常のpagesディレクトリに配置する必要があります。
 
 ・セッション管理パッケージインストール
     最適なライブラリが未定（next-auth、iron-session）あとで考える（6/17）
@@ -76,7 +75,7 @@
     https://mseeeen.msen.jp/nextjs-custom-auth-with-iron-session/
 
 
-6/17
+
 ・URLパラメタ取得方法
   const { searchParams } = new URL(req.url as string);
   const USERID = searchParams.get('USERID');
@@ -102,8 +101,11 @@
 ・aws-sdkインストール
     $ npm install aws-sdk
 
+・VSCodeデバッグ
+    .vscode/launch.json
 
-6/18
+
+
 ・next-authインストール
     $ npm install next-auth
     $ npm install jsonwebtoken
@@ -115,3 +117,4 @@
 
 ・CORS確認方法
     $ curl -H "Origin: http://example.com" -i http://localhost:3000/api/hello
+

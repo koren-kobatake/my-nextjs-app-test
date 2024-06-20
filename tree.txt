@@ -1,0 +1,177 @@
+├── app
+│   ├── pages
+│   │   ├── hello
+│   │   │   ├── const.ts
+│   │   │   ├── types.d.ts
+│   │   │   ├── useHello.ts
+│   │   │   ├── use$HelloStore.ts
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── api
+│   │   └── hello
+│   │       └── route.ts
+│   ├── assets
+│   ├── const
+│   ├── components
+│   ├── lib
+│   ├── styles
+│   ├── types
+│   └── utils
+
+
+
+
+
+.
+├── Dockerfile
+├── README.md
+├── __next.config.js
+├── app
+│   ├── (pages)
+│   │   ├── (uiitems)
+│   │   │   ├── card
+│   │   │   │   ├── constants
+│   │   │   │   │   └── data.ts
+│   │   │   │   ├── layout.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── checkbox
+│   │   │   │   └── page.tsx
+│   │   │   ├── datepicker
+│   │   │   │   └── page.tsx
+│   │   │   ├── navmenu
+│   │   │   │   └── page.tsx
+│   │   │   ├── table
+│   │   │   │   ├── constants
+│   │   │   │   │   └── data.ts
+│   │   │   │   └── page.tsx
+│   │   │   └── tabs
+│   │   │       └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── logintest
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   ├── reference
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── registration
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   └── session
+│   │       └── page.tsx
+│   ├── api
+│   │   ├── auth
+│   │   │   ├── [...nextauth]
+│   │   │   │   ├── options.ts
+│   │   │   │   └── route.ts
+│   │   │   ├── login
+│   │   │   │   └── route.ts
+│   │   │   └── session
+│   │   │       └── route.ts
+│   │   ├── hello
+│   │   │   └── route.ts
+│   │   ├── logout
+│   │   ├── register
+│   │   │   └── route.ts
+│   │   ├── session
+│   │   ├── sessionExpire
+│   │   │   └── route.ts
+│   │   └── users
+│   │       └── route.ts
+│   ├── assets
+│   ├── components
+│   │   ├── CardDemo
+│   │   │   └── index.tsx
+│   │   ├── CheckboxReactHookFormMultipleDemo
+│   │   │   ├── formSchema.ts
+│   │   │   ├── index.tsx
+│   │   │   └── items.ts
+│   │   ├── DataTableDemo
+│   │   │   ├── columns.tsx
+│   │   │   ├── constants
+│   │   │   │   └── data.ts
+│   │   │   └── index.tsx
+│   │   ├── DatePickerDemo
+│   │   │   ├── DatePickerForm.tsx
+│   │   │   └── formSchema.ts
+│   │   ├── Footer
+│   │   │   └── index.tsx
+│   │   ├── Header
+│   │   │   └── index.tsx
+│   │   ├── NavMenu
+│   │   │   └── index.tsx
+│   │   ├── Navbar
+│   │   │   └── index.tsx
+│   │   ├── NavigationMenuDemo
+│   │   │   ├── ListItem.tsx
+│   │   │   └── index.tsx
+│   │   ├── Registration
+│   │   │   ├── RegistrationForm.tsx
+│   │   │   └── formSchema.ts
+│   │   ├── TabsDemo
+│   │   │   └── index.tsx
+│   │   ├── icons.tsx
+│   │   └── ui
+│   │       ├── button.tsx
+│   │       ├── calendar.tsx
+│   │       ├── card.tsx
+│   │       ├── checkbox.tsx
+│   │       ├── command.tsx
+│   │       ├── dialog.tsx
+│   │       ├── dropdown-menu.tsx
+│   │       ├── form.tsx
+│   │       ├── input.tsx
+│   │       ├── label.tsx
+│   │       ├── navigation-menu.tsx
+│   │       ├── popover.tsx
+│   │       ├── radio-group.tsx
+│   │       ├── select.tsx
+│   │       ├── switch.tsx
+│   │       ├── table.tsx
+│   │       ├── tabs.tsx
+│   │       ├── textarea.tsx
+│   │       ├── toast.tsx
+│   │       ├── toaster.tsx
+│   │       └── use-toast.ts
+│   ├── lib
+│   │   ├── getDatabaseUrl.ts
+│   │   ├── logger.ts
+│   │   ├── prisma.ts
+│   │   └── utils.ts
+│   ├── styles
+│   │   └── globals.css
+│   ├── types
+│   └── utils
+│       └── api.ts
+├── cicd
+│   ├── appspec.yml
+│   ├── buildspec.yml
+│   └── taskdef.json
+├── infra
+│   └── cloudformation.yml
+├── components.json
+├── docker-compose.yml
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── prisma
+│   ├── migrations
+│   │   ├── 20240617142430_init
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── public
+│   ├── next.svg
+│   └── vercel.svg
+├── tailwind.config.js
+├── tree.txt
+├── tsconfig.json
+├── 選定_ORM
+├── 選定_UT（バックエンド）
+├── 選定_ロガー
+├── 選定_セッション管理
+├── 設計ネタ
+├── 開発メモ
+└── デプロイ手順
