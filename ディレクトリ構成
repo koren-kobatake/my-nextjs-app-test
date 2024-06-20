@@ -1,28 +1,77 @@
-├── app
-│   ├── pages
-│   │   ├── hello
-│   │   │   ├── const.ts
-│   │   │   ├── types.d.ts
-│   │   │   ├── useHello.ts
-│   │   │   ├── use$HelloStore.ts
-│   │   │   └── page.tsx
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── api
-│   │   └── hello
-│   │       └── route.ts
-│   ├── assets
-│   ├── const
-│   ├── components
-│   ├── lib
-│   ├── styles
-│   ├── types
-│   └── utils
+＜TOBE＞
+my-next-app/
+├── public/                      # 静的ファイルを格納するディレクトリ
+│   ├── favicon.ico              # サイトのファビコン
+│   ├── images/                  # 画像ファイルを格納するディレクトリ
+│   └── ...                      # その他の静的ファイル
+├── src/                         # ソースコード全体を管理するディレクトリ
+│   ├── app/                     # Next.js 13+ のApp Router関連のディレクトリ
+│   │   ├── layout.tsx           # アプリ全体のレイアウトコンポーネント
+│   │   ├── page.tsx             # ルートページのコンポーネント
+│   │   ├── api/                 # APIルートを配置するディレクトリ
+│   │   │   ├── hello.ts         # 例: "hello" APIエンドポイント
+│   │   │   └── ...              # その他のAPIエンドポイント
+│   │   ├── about/               # "about" ページ関連のディレクトリ
+│   │   │   ├── page.tsx         # "about" ページのコンポーネント
+│   │   │   └── ...              # "about" ページ関連のファイル
+│   │   ├── blog/                # "blog" ページ関連のディレクトリ
+│   │   │   ├── layout.tsx       # "blog" ページのレイアウトコンポーネント
+│   │   │   ├── page.tsx         # "blog" ページのコンポーネント
+│   │   │   └── [id]/            # 動的ルートを扱うディレクトリ
+│   │   │       ├── page.tsx     # 特定のブログ記事ページのコンポーネント
+│   │   │       └── ...          # その他の動的ルート関連のファイル
+│   │   └── ...                  # その他のApp Router関連のファイル
+│   ├── components/              # 再利用可能なコンポーネントを格納するディレクトリ
+│   │   ├── common/              # 共有コンポーネントを格納するディレクトリ
+│   │   │   ├── Button.tsx       # ボタンコンポーネント
+│   │   │   ├── Header.tsx       # ヘッダーコンポーネント
+│   │   │   └── ...              # その他の共有コンポーネント
+│   │   ├── forms/               # フォーム関連のコンポーネントを格納するディレクトリ
+│   │   │   ├── LoginForm.tsx    # ログインフォームコンポーネント
+│   │   │   └── ...              # その他のフォーム関連コンポーネント
+│   │   └── ...                  # その他のコンポーネント
+│   ├── hooks/                   # カスタムフックを格納するディレクトリ
+│   │   ├── useAuth.ts           # 認証関連のカスタムフック
+│   │   └── ...                  # その他のカスタムフック
+│   ├── services/                # 外部APIとの通信ロジックを格納するディレクトリ
+│   │   ├── api.ts               # API通信ロジック
+│   │   └── ...                  # その他のサービスロジック
+│   ├── styles/                  # CSSファイルを格納するディレクトリ
+│   │   ├── globals.css          # グローバルスタイルシート
+│   │   ├── tailwind.css         # Tailwind CSS設定ファイル
+│   │   └── ...                  # その他のスタイルシート
+│   ├── types/                   # TypeScriptの型定義を格納するディレクトリ
+│   │   ├── index.d.ts           # 型定義ファイル
+│   │   └── ...                  # その他の型定義ファイル
+│   ├── utils/                   # ユーティリティ関数を格納するディレクトリ
+│   │   ├── api.ts               # API呼び出しのユーティリティ関数
+│   │   └── ...                  # その他のユーティリティ関数
+│   ├── context/                 # Reactのコンテキストを格納するディレクトリ
+│   │   ├── AuthContext.tsx      # 認証コンテキスト
+│   │   └── ...                  # その他のコンテキスト
+│   └── ...                      # その他のソースコード
+├── .env.local                   # 環境変数を定義するファイル
+├── .gitignore                   # Gitで無視するファイルを定義するファイル
+├── next.config.js               # Next.jsの設定ファイル
+├── package.json                 # プロジェクトの依存関係とスクリプト
+├── tailwind.config.js           # Tailwind CSSの設定ファイル
+├── tsconfig.json                # TypeScriptの設定ファイル
+└── ...                          # その他のファイル
+├── infra/                       # インフラファイルを格納するディレクトリ
+│   ├── cicd/                    # CI/CDファイルを格納するディレクトリ
+│   ├── cloudformation/          # CloudFormationファイルを格納するディレクトリ
+│   └── ...
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── ...
 
 
 
-
-
+＜ASIS＞
 .
 ├── Dockerfile
 ├── README.md
